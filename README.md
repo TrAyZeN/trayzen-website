@@ -3,10 +3,9 @@
 </h1>
 
 > TrAyZeN's personal website
-<div align="center">
+<!-- <div align="center">
     <img src="assets/image.png"/>
-</div>
-Longer description of the project
+</div> -->
 
 ## Requirements
 - [Node](https://nodejs.org/)
