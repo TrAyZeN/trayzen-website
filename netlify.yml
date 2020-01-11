@@ -1,0 +1,14 @@
+build:
+  base: trayzen-website/
+  publish: build/
+  command: yarn build
+  processing:
+    skip_processing: false
+    css:
+      bundle: true
+      minify: true
+    js:
+      bundle: true
+      minify: true
+    images:
+      compress: true
