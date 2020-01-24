@@ -1,23 +1,46 @@
 .App {
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  border-radius: 50%;
-}
+  .Profile-picture {
+    height: 25vmin;
+    border-radius: 50%;
+    margin-top: 10vh;
+  }
 
-.App-header {
-  background-image: radial-gradient(closest-side ellipse at center, #0b8ec6, #0460a5);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .App-header {
+    background-image: radial-gradient(closest-side ellipse at center, #0b8ec6, #0460a5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
 
-.App-link {
-  color: #09d3ac;
+  .App-link {
+    color: #09d3ac;
+  }
+
+  h1 {
+    margin: 0 auto;
+    font-size: calc(5px + 4vmin);
+  }
+
+  .Status {
+    font-style: italic;
+    font-size: calc(5px + 2vmin);
+    margin-bottom: 1vmin;
+  }
+
+  .Vertical-line {
+    width: 60vmin;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .Social-icon {
+    width: 4vmin;
+    height: 4vmin;
+    margin-top: 10vmin;
+  }
 }
