@@ -1,8 +1,9 @@
 import React from 'react';
 import './style.scss';
 
+import Social from '../Social';
+
 import profile_picture from '../../assets/profile_picture.png';
-import github from '../../assets/github.png';
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
 
         <hr className="Vertical-line" />
 
-        <a href="https://github.com/TrAyZeN">
-          <img src={github} className="Social-icon" />
-        </a>
+        <Social />
 
         {/* <p className="Description">
           I love to code and to play with maths.

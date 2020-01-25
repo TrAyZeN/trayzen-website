@@ -1,0 +1,23 @@
+.Social-icon {
+  width: 5vmin;
+  height: 5vmin;
+  padding: 1vmin;
+
+  background-color: white;
+  border-radius: 50%;
+
+  margin-left: 1vmin;
+  margin-right: 1vmin;
+
+  transition: 0.15s;
+}
+
+.Social-icon:hover {
+  padding: 0.8vmin;
+  margin-left: 1.2vmin;
+  margin-right: 1.2vmin;
+
+  background-color: #f0f0f0;
+
+  transition: 0.15s;
+}
