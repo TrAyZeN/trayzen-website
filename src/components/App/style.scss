@@ -3,7 +3,7 @@
   color: white;
 
   .App-header {
-    background-color: #cc7252;
+    background-color: #ff7e4f;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,14 +13,14 @@
       height: 25vmin;
       border-radius: 50%;
       margin-top: calc(7px + 10vh);
-  
-      border: 3px solid #ff8438;
+
+      border: 3px solid #ffd045;
       margin-bottom: 7px;
       transition: 0.3s;
     }
-  
+
     .Profile-picture:hover {
-      border: 10px solid #ff8438;
+      border: 10px solid #ffd045;
       margin-top: 10vh;
       margin-bottom: 0px;
       transition: 0.3s;
@@ -49,7 +49,7 @@
   }
 
   .App-footer {
-    background-color: #cc7252;
+    background-color: #ff7e4f;
 
     padding: 2vmin;
 
