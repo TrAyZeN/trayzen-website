@@ -1,29 +1,22 @@
 .Social {
-  margin: 0 auto;
-  margin-top: 15vmin;
+  .Social-icon {
+    width: 5vmin;
+    height: 5vmin;
+    padding: 1vmin;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  button {
     background-color: white;
+    border-radius: 50%;
     border: 5px solid #ffd045;
-    border-radius: 20px;
-    color: black;
-
-    font-size: 4vmin;
 
     margin-left: 1vmin;
     margin-right: 1vmin;
 
-    outline: 0;
-
     transition: 0.15s;
   }
 
-  button:hover {
+  .Social-icon:hover {
     background-color: #ffd045;
+
     transition: 0.15s;
   }
 }

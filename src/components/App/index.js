@@ -5,12 +5,16 @@ import Social from '../Social';
 import ProjectList from '../ProjectList';
 
 import profile_picture from '../../assets/profile_picture.png';
+import github from '../../assets/github.svg';
+import mail from '../../assets/mail.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={profile_picture} className="Profile-picture" alt="profile_picture" />
+        <img src={profile_picture}
+             className="Profile-picture"
+             alt="profile_picture" />
 
         <h1>TrAyZeN</h1>
 
@@ -20,7 +24,13 @@ function App() {
 
         <hr className="Vertical-line" />
 
-        <Social />
+        <div className="Social-links">
+          <Social href="mailto:lbenitoproduction@gmail.com"
+                  src={mail} />
+          <Social href="https://github.com/TrAyZeN"
+                  src={github} />
+          <button>Resume</button>
+        </div>
       </header>
 
       <ProjectList />
