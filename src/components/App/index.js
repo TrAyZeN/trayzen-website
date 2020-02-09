@@ -26,7 +26,7 @@ function App() {
       <ProjectList />
 
       <footer className="App-footer">
-        <p>This website as been created by TrAyZeN</p>
+        <p>This website has been created by TrAyZeN</p>
         <p><a href="https://github.com/TrAyZeN/trayzen-website">See the source code here</a></p>
       </footer>
     </div>
