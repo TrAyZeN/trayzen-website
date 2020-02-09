@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 
 import Social from '../Social';
+import ProjectList from '../ProjectList';
 
 import profile_picture from '../../assets/profile_picture.png';
 
@@ -20,12 +21,14 @@ function App() {
         <hr className="Vertical-line" />
 
         <Social />
-
-        {/* <p className="Description">
-          I love to code and to play with maths.
-        </p> */}
-
       </header>
+
+      <ProjectList />
+
+      <footer className="App-footer">
+        <p>This website as been created by TrAyZeN</p>
+        <p><a href="https://github.com/TrAyZeN/trayzen-website">See the source code here</a></p>
+      </footer>
     </div>
   );
 }

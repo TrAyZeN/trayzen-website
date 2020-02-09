@@ -3,7 +3,7 @@ import './style.scss';
 
 import SocialIcon from '../SocialIcon';
 
-import github from '../../assets/github.png';
+import github from '../../assets/github.svg';
 import mail from '../../assets/mail.png';
 
 function Social() {
@@ -14,6 +14,7 @@ function Social() {
 
         <SocialIcon link="https://github.com/TrAyZeN"
                     src={github} />
+        <button>Resume</button>
       </div>
     );
 }

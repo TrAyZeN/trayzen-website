@@ -1,40 +1,65 @@
 .App {
   text-align: center;
-
-  .Profile-picture {
-    height: 25vmin;
-    border-radius: 50%;
-    margin-top: 10vh;
-  }
+  color: white;
 
   .App-header {
-    background-image: radial-gradient(closest-side ellipse at center, #0b8ec6, #0460a5);
+    background-color: #cc7252;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+
+    .Profile-picture {
+      height: 25vmin;
+      border-radius: 50%;
+      margin-top: calc(7px + 10vh);
+  
+      border: 3px solid #ff8438;
+      margin-bottom: 7px;
+      transition: 0.3s;
+    }
+  
+    .Profile-picture:hover {
+      border: 10px solid #ff8438;
+      margin-top: 10vh;
+      margin-bottom: 0px;
+      transition: 0.3s;
+    }
+
+    h1 {
+      color: white;
+      margin: 0 auto;
+      font-size: calc(5px + 5vmin);
+      font-family: 'Roboto';
+    }
+
+    .Status {
+      font-style: italic;
+      font-size: calc(5px + 2vmin);
+      margin-bottom: 1vmin;
+      font-family: 'Roboto';
+    }
+
+    .Vertical-line {
+      width: 60vmin;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin: 0;
+    }
   }
 
-  .App-link {
-    color: #09d3ac;
-  }
+  .App-footer {
+    background-color: #cc7252;
 
-  h1 {
-    margin: 0 auto;
-    font-size: calc(5px + 6vmin);
-  }
+    padding: 2vmin;
 
-  .Status {
-    font-style: italic;
-    font-size: calc(5px + 2vmin);
-    margin-bottom: 1vmin;
-  }
+    p {
+      margin: 0;
+    }
 
-  .Vertical-line {
-    width: 60vmin;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 0;
+    a {
+      text-decoration: underline;
+      color: white;
+    }
   }
 }

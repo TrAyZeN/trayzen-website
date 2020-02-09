@@ -5,4 +5,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  button {
+    background-color: white;
+    border: 5px solid #ff8438;
+    border-radius: 20px;
+    color: black;
+
+    font-size: 4vmin;
+
+    margin-left: 1vmin;
+    margin-right: 1vmin;
+
+    outline: 0;
+
+    transition: 0.15s;
+  }
+
+  button:hover {
+    background-color: #ff8438;
+    transition: 0.15s;
+  }
 }

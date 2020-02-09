@@ -5,6 +5,7 @@
 
   background-color: white;
   border-radius: 50%;
+  border: 5px solid #ff8438;
 
   margin-left: 1vmin;
   margin-right: 1vmin;
@@ -13,11 +14,7 @@
 }
 
 .Social-icon:hover {
-  padding: 0.8vmin;
-  margin-left: 1.2vmin;
-  margin-right: 1.2vmin;
-
-  background-color: #f0f0f0;
+  background-color: #ff8438;
 
   transition: 0.15s;
 }
