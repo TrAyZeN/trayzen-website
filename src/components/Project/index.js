@@ -23,10 +23,12 @@ class Project extends React.Component {
 
   render() {
     return (
-      <button className="Project" onClick={() => window.location = this.state.html_url}>
-        <h2>{this.state.name}</h2>
-        <p>{this.state.description}</p>
-      </button>
+      <div className="Project">
+        <button onClick={() => window.location = this.state.html_url}>
+          <h2>{this.state.name}</h2>
+          <p>{this.state.description}</p>
+        </button>
+      </div>
     );
   }
 }

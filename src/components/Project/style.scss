@@ -1,24 +1,32 @@
 .Project {
-    cursor: pointer;
-    border: 6px solid white;
-    color: white;
-    background: none;
-    border-radius: 6px;
+    display: inline;
 
-    padding: 10px;
-    padding-left: 30px;
-    width: 40%;
-    margin: 2vmin;
+    button {
+        cursor: pointer;
+        border: 6px solid white;
+        color: white;
+        background: none;
+        border-radius: 6px;
 
-    transition: 0.3s;
+        padding: 10px;
+        padding-left: 30px;
+        width: 40%;
+        margin: 2vmin;
 
-    h2, p {
-        text-align: left;
+        transition: 0.3s;
+
+        h2, p {
+            text-align: left;
+        }
     }
-}
 
-.Project:hover {
-    background-color: white;
-    color: #ab4141;
-    transition: 0.3s;
+    button:hover {
+        background-color: white;
+        color: #ab4141;
+        transition: 0.3s;
+    }
+
+    button:focus {
+        outline: 0;
+    }
 }
