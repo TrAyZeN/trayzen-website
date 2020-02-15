@@ -78,6 +78,16 @@
     }
   }
 
+  .ProjectList {
+    background-color: #ab4141;
+    margin: 0;
+    padding: 3vmin;
+
+    .ProjectBox {
+      display: flex;
+    }
+  }
+
   .App-footer {
     background-color: #ff7e4f;
 

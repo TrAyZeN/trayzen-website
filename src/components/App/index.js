@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 
 import Social from '../Social';
-import ProjectList from '../ProjectList';
+import Project from '../Project';
 
 import profile_picture from '../../assets/profile_picture.png';
 import github from '../../assets/github.svg';
@@ -33,7 +33,16 @@ function App() {
         </div>
       </header>
 
-      <ProjectList />
+      <div className="ProjectList">
+        <h1>Projects</h1>
+
+        <div className="Project-Box">
+          <Project name="brainfuck-interpreter" />
+          <Project name="steg-cli" />
+          <Project name="youtube-downloader" />
+          <Project name="DocSaverPy" />
+        </div>
+      </div>
 
       <footer className="App-footer">
         <p>This website has been created by TrAyZeN</p>
