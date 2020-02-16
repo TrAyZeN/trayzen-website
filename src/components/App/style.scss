@@ -40,18 +40,22 @@
       font-family: 'Roboto';
     }
 
-    .Description {
-      width: 45%;
-      font-size: calc(6px + 1vmin);
-      font-family: 'Roboto';
-    }
-
     .Vertical-line {
       width: 60vmin;
       border: 1px solid white;
       border-radius: 5px;
       margin: 0;
+      margin-bottom: 2vmin;
     }
+
+    .Description {
+      width: 45%;
+      font-size: calc(6px + 1vmin);
+      font-family: 'Roboto';
+      margin: 0;
+      margin-top: 3px;
+    }
+
 
     .Social-links {
       margin: 0 auto;

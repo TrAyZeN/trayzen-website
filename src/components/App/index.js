@@ -24,7 +24,11 @@ function App() {
 
         <p className="Description">
           Interested in Mathematics, Engineering, Electronics, 5+ years of programming.
+        </p>
+        <p className="Description">
           Investigating old source code, hacking and practicing competitive programming in my spare time.
+        </p>
+        <p className="Description">
           Also, producing clean code, learning TDD, and other technologies or methods, I love to learn new things.
         </p>
 
