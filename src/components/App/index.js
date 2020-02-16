@@ -18,11 +18,15 @@ function App() {
 
         <h1>TrAyZeN</h1>
 
-        <p className="Status">
-          Self taught programmer addicted to learning
-        </p>
+        <p className="Status">Computer Science Student at EPITA</p>
 
         <hr className="Vertical-line" />
+
+        <p className="Description">
+          Interested in Mathematics, Engineering, Electronics, 5+ years of programming.
+          Investigating old source code, hacking and practicing competitive programming in my spare time.
+          Also, producing clean code, learning TDD, and other technologies or methods, I love to learn new things.
+        </p>
 
         <div className="Social-links">
           <Social href="mailto:lbenitoproduction@gmail.com"
