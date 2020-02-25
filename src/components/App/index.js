@@ -7,6 +7,7 @@ import Project from '../Project';
 import profile_picture from '../../assets/profile_picture.png';
 import github from '../../assets/github.svg';
 import mail from '../../assets/mail.png';
+import resume from '../../assets/resume.pdf';
 
 function App() {
   return (
@@ -37,7 +38,11 @@ function App() {
                   src={mail} />
           <Social href="https://github.com/TrAyZeN"
                   src={github} />
-          <button>Resume</button>
+          <a href={resume}
+             target="_blank"
+             rel="noopener noreferrer">
+            <button>Resume</button>
+          </a>
         </div>
       </header>
 
