@@ -6,6 +6,7 @@ import Project from '../Project';
 
 import profile_picture from '../../assets/profile_picture.png';
 import github from '../../assets/github.svg';
+import linkedin from '../../assets/linkedin.svg'
 import mail from '../../assets/mail.png';
 import resume from '../../assets/resume.pdf';
 
@@ -34,10 +35,12 @@ function App() {
         </p>
 
         <div className="Social-links">
-          <Social href="mailto:lbenitoproduction@gmail.com"
-                  src={mail} />
-          <Social href="https://github.com/TrAyZeN"
-                  src={github} />
+          <Social link="mailto:lbenitoproduction@gmail.com"
+                  icon={mail} />
+          <Social link="https://github.com/TrAyZeN"
+                  icon={github} />
+          <Social link="https://www.linkedin.com/in/leo-benito"
+                  icon={linkedin} />
           <a href={resume}
              target="_blank"
              rel="noopener noreferrer">
@@ -60,6 +63,7 @@ function App() {
       <footer className="App-footer">
         <p>This website has been created by TrAyZeN</p>
         <p><a href="https://github.com/TrAyZeN/trayzen-website">See the source code here</a></p>
+        <p>Linkedin icon made by Freepik from flaticon.com</p>
       </footer>
     </div>
   );
