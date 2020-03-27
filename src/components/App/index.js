@@ -24,15 +24,17 @@ function App() {
 
         <hr className="Vertical-line" />
 
-        <p className="Description">
-          Interested in Mathematics, Engineering, Electronics, 5+ years of programming.
-        </p>
-        <p className="Description">
-          Investigating old source code, hacking and practicing competitive programming in my spare time.
-        </p>
-        <p className="Description">
-          Also, producing clean code, learning TDD, and other technologies or methods, I love to learn new things.
-        </p>
+        <div className="Description">
+          <p>
+            Interested in Mathematics, Engineering, Electronics, 5+ years of programming.
+          </p>
+          <p>
+            Investigating old source code, hacking and practicing competitive programming in my spare time.
+          </p>
+          <p>
+            Also, producing clean code, learning TDD, and other technologies or methods, I love to learn new things.
+          </p>
+        </div>
 
         <div className="Social-links">
           <Social link="mailto:lbenitoproduction@gmail.com"
@@ -53,10 +55,14 @@ function App() {
         <h1>Projects</h1>
 
         <div className="Project-Box">
-          <Project name="brainfuck-interpreter" />
-          <Project name="steg-cli" />
-          <Project name="youtube-downloader" />
-          <Project name="DocSaverPy" />
+          <Project user="TrAyZeN"
+                   name="brainfuck-interpreter" />
+          <Project user="TrAyZeN"
+                   name="steg-cli" />
+          <Project user="TrAyZeN"
+                   name="youtube-downloader" />
+          <Project user="Crab-Wave"
+                   name="ora" />
         </div>
       </div>
 

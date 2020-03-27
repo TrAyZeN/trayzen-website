@@ -7,6 +7,7 @@ class Project extends React.Component {
     super(props);
 
     this.state = {
+      user: this.props.user,
       name: this.props.name,
       description: "",
       html_url: ""
@@ -16,7 +17,7 @@ class Project extends React.Component {
   }
 
   parseRepo() {
-    fetch(`https://api.github.com/repos/TrAyZeN/${this.state.name}`)
+    fetch(`https://api.github.com/repos/${this.state.user}/${this.state.name}`)
       .then(response => response.json())
       .then(response => this.setState(response));
   }
