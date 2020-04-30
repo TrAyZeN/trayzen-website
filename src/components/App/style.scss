@@ -1,9 +1,12 @@
+@import '../../assets/theme.scss';
+
 .App {
   text-align: center;
   color: white;
+  font-family: 'Roboto';
 
   .App-header {
-    background-color: #ff7e4f;
+    background-color: $background1;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,13 +17,13 @@
       border-radius: 50%;
       margin-top: calc(7px + 10vh);
 
-      border: 3px solid #ffd045;
+      border: 3px solid $button;
       margin-bottom: 7px;
       transition: 0.3s;
     }
 
     .Profile-picture:hover {
-      border: 10px solid #ffd045;
+      border: 10px solid $button;
       margin-top: 10vh;
       margin-bottom: 0px;
       transition: 0.3s;
@@ -30,14 +33,12 @@
       color: white;
       margin: 0 auto;
       font-size: calc(5px + 5vmin);
-      font-family: 'Roboto';
     }
 
     .Status {
       font-style: italic;
       font-size: calc(5px + 2vmin);
       margin-bottom: 1vmin;
-      font-family: 'Roboto';
     }
 
     .Vertical-line {
@@ -55,12 +56,10 @@
 
       p {
         font-size: calc(6px + 1vmin);
-        font-family: 'Roboto';
         margin: 0;
         margin-bottom: 1vmin;
       }
     }
-
 
     .Social-links {
       margin: 0 auto;
@@ -72,7 +71,7 @@
 
       button {
         background-color: white;
-        border: 5px solid #ffd045;
+        border: 5px solid $button;
         border-radius: 20px;
         color: black;
 
@@ -89,14 +88,14 @@
       }
 
       button:hover {
-        background-color: #ffd045;
+        background-color: $button;
         transition: 0.15s;
       }
     }
   }
 
   .ProjectList {
-    background-color: #ab4141;
+    background-color: $background2;
     margin: 0;
     padding: 3vmin;
 
@@ -106,7 +105,7 @@
   }
 
   .App-footer {
-    background-color: #ff7e4f;
+    background-color: $background1;
 
     padding: 2vmin;
 

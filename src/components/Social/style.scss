@@ -1,3 +1,5 @@
+@import '../../assets/theme.scss';
+
 .Social {
   .Social-icon {
     width: 5vmin;
@@ -6,7 +8,7 @@
 
     background-color: white;
     border-radius: 50%;
-    border: 5px solid #ffd045;
+    border: 5px solid $button;
 
     margin-left: 1vmin;
     margin-right: 1vmin;
@@ -15,7 +17,7 @@
   }
 
   .Social-icon:hover {
-    background-color: #ffd045;
+    background-color: $button;
 
     transition: 0.15s;
   }
