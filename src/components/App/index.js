@@ -5,7 +5,8 @@ import Social from '../Social';
 import Project from '../Project';
 
 import profile_picture from '../../assets/profile_picture.png';
-import github from '../../assets/github.svg';
+import github from '../../assets/github.png';
+import gitlab from '../../assets/gitlab.png';
 import linkedin from '../../assets/linkedin.svg'
 import mail from '../../assets/mail.png';
 import resume from '../../assets/resume.pdf';
@@ -41,6 +42,8 @@ function App() {
                   icon={mail} />
           <Social link="https://github.com/TrAyZeN"
                   icon={github} />
+          <Social link="https://gitlab.com/TrAyZeN"
+                  icon={gitlab} />
           <Social link="https://www.linkedin.com/in/leo-benito"
                   icon={linkedin} />
           <a href={resume}
