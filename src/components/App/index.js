@@ -7,7 +7,7 @@ import Project from '../Project';
 import profile_picture from '../../assets/profile_picture.png';
 import github from '../../assets/github.png';
 import gitlab from '../../assets/gitlab.png';
-import linkedin from '../../assets/linkedin.svg'
+import linkedin from '../../assets/linkedin.png'
 import mail from '../../assets/mail.png';
 import resume from '../../assets/resume.pdf';
 
@@ -72,7 +72,6 @@ function App() {
       <footer className="App-footer">
         <p>This website has been created by TrAyZeN</p>
         <p><a href="https://github.com/TrAyZeN/trayzen-website">See the source code here</a></p>
-        <p>Linkedin icon made by Freepik from flaticon.com</p>
       </footer>
     </div>
   );
