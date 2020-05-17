@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  color: white;
+  color: $text1;
   font-family: 'Roboto';
 
   .App-header {
@@ -30,20 +30,20 @@
     }
 
     h1 {
-      color: white;
+      color: $text1;
       margin: 0 auto;
-      font-size: calc(5px + 5vmin);
+      font-size: calc(7px + 5vmin);
     }
 
     .Status {
       font-style: italic;
-      font-size: calc(5px + 2vmin);
+      font-size: calc(6px + 2vmin);
       margin-bottom: 1vmin;
     }
 
     .Vertical-line {
-      width: 60vmin;
-      border: 1px solid white;
+      width: 35%;
+      border: 1px solid $text1;
       border-radius: 5px;
       margin: 0;
       margin-bottom: 2vmin;
@@ -55,9 +55,9 @@
       flex-direction: column;
 
       p {
-        font-size: calc(6px + 1vmin);
+        font-size: calc(8px + 1vmin);
         margin: 0;
-        margin-bottom: 1vmin;
+        margin-bottom: 1.1vmin;
       }
     }
 
@@ -99,6 +99,11 @@
     margin: 0;
     padding: 3vmin;
 
+    h1 {
+      color: $text2;
+      font-size: calc(8px + 3vmin);
+    }
+
     .ProjectBox {
       display: flex;
     }
@@ -115,7 +120,7 @@
 
     a {
       text-decoration: underline;
-      color: white;
+      color: $text1;
     }
   }
 }

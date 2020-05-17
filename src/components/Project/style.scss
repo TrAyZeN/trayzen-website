@@ -1,3 +1,5 @@
+@import '../../assets/theme.scss';
+
 .Project {
     display: inline;
 
@@ -22,7 +24,7 @@
 
     button:hover {
         background-color: white;
-        color: #ab4141;
+        color: $background2;
         transition: 0.3s;
     }
 
