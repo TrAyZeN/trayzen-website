@@ -32,17 +32,17 @@
     h1 {
       color: $text1;
       margin: 0 auto;
-      font-size: calc(7px + 5vmin);
+      font-size: calc(5px + 5vmin);
     }
 
     .Status {
       font-style: italic;
-      font-size: calc(6px + 2vmin);
+      font-size: calc(4px + 2vmin);
       margin-bottom: 1vmin;
     }
 
     .Vertical-line {
-      width: 35%;
+      width: 32%;
       border: 1px solid $text1;
       border-radius: 5px;
       margin: 0;
@@ -55,9 +55,9 @@
       flex-direction: column;
 
       p {
-        font-size: calc(8px + 1vmin);
+        font-size: calc(6px + 1vmin);
         margin: 0;
-        margin-bottom: 1.1vmin;
+        margin-bottom: 1vmin;
       }
     }
 
