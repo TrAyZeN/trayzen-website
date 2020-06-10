@@ -6,31 +6,36 @@ class Project extends React.Component {
   constructor(props) {
     super(props);
 
+    const { user, name } = props;
     this.state = {
-      user: this.props.user,
-      name: this.props.name,
-      description: "",
-      html_url: ""
+      user,
+      name,
+      description: '',
+      htmlUrl: '',
     };
 
-    this.parseRepo();
+    this.parseRepo(this.state);
   }
 
-  parseRepo() {
-    fetch(`https://api.github.com/repos/${this.state.user}/${this.state.name}`)
-      .then(response => response.json())
-      .then(response => this.setState(response));
+  parseRepo({ user, name }) {
+    fetch(`https://api.github.com/repos/${user}/${name}`)
+      .then((response) => response.json())
+      .then((response) =>
+        this.setState({
+          response,
+          htmlUrl: response.html_url,
+        })
+      );
   }
 
   render() {
+    const { htmlUrl, name, description } = this.state;
     return (
       <div className="Project">
-        <a href={this.state.html_url}
-           target="_blank"
-           rel="noopener noreferrer">
-          <button>
-            <h2>{this.state.name}</h2>
-            <p>{this.state.description}</p>
+        <a href={htmlUrl} target="_blank" rel="noopener noreferrer">
+          <button type="button">
+            <h2>{name}</h2>
+            <p>{description}</p>
           </button>
         </a>
       </div>
