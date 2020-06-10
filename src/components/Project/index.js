@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import fetch from 'node-fetch';
 import './style.scss';
 
@@ -30,6 +31,11 @@ const Project = ({ user, name }) => {
       </a>
     </div>
   );
+};
+
+Project.propTypes = {
+  user: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default Project;

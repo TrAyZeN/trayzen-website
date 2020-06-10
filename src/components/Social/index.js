@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './style.scss';
 
 const Social = ({ link, icon }) => (
@@ -8,5 +9,10 @@ const Social = ({ link, icon }) => (
     </a>
   </div>
 );
+
+Social.propTypes = {
+  link: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+};
 
 export default Social;
