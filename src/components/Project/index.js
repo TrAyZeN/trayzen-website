@@ -14,12 +14,10 @@ const Project = ({ user, name }) => {
   const [description, setDescription] = useState('');
   const [htmlUrl, setHtmlUrl] = useState('');
 
-  getRepositoryInformation(user, name)
-    .then((response) => response.json())
-    .then(({ description, html_url }) => {
-      setDescription(description);
-      setHtmlUrl(html_url);
-    });
+  getRepositoryInformation(user, name).then(({ description, html_url }) => {
+    setDescription(description);
+    setHtmlUrl(html_url);
+  });
 
   return (
     <div className="Project">
