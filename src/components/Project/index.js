@@ -14,6 +14,7 @@ const Project = ({ user, name }) => {
   const [description, setDescription] = useState('');
   const [htmlUrl, setHtmlUrl] = useState('');
 
+  // eslint-disable-next-line no-shadow
   getRepositoryInformation(user, name).then(({ description, html_url }) => {
     setDescription(description);
     setHtmlUrl(html_url);
