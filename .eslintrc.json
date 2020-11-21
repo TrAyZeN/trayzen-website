@@ -22,7 +22,7 @@
   "rules": {
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "prettier/prettier": "error",
-    "implicit-arrow-linebreak": "warn",
+    "implicit-arrow-linebreak": "off",
     "camelcase": ["error", { "ignoreDestructuring": true }]
   }
 }
