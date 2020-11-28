@@ -9,7 +9,7 @@ module.exports = {
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
     '@snowpack/plugin-sass',
-    '@snowpack/plugin-optimize',
+    '@snowpack/plugin-webpack',
     ['@snowpack/plugin-run-script', {
       'cmd': 'eslint --config .eslintrc.json \"src/**/*.{js,jsx.ts,tsx}\"',
       'watch': 'watch \"$1\" src',
