@@ -11,7 +11,7 @@ import linkedin from '../../assets/linkedin.png';
 import mail from '../../assets/mail.png';
 import resume from '../../assets/resume.pdf';
 
-const App = () => (
+const App: React.VFC = () => (
   <div className="App">
     <header className="App-header">
       <img

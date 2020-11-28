@@ -1,28 +1,41 @@
 {
+  "root": true,
   "env": {
     "browser": true,
-    "es2020": true
+    "es2020": true,
+    "node": true
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 11,
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "project": "./tsconfig.json"
   },
   "extends": [
+    // "eslint:recommend",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
     "airbnb",
+    "airbnb-typescript",
     "plugin:jsx-a11y/recommended",
     "prettier",
-    "prettier/react"
+    "prettier/react",
+    "prettier/@typescript-eslint"
   ],
   "plugins": [
     "jsx-a11y",
-    "prettier"
+    "prettier",
+    "@typescript-eslint"
   ],
   "rules": {
-    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-    "prettier/prettier": "error",
     "implicit-arrow-linebreak": "off",
-    "camelcase": ["error", { "ignoreDestructuring": true }]
+    "camelcase": ["error", { "ignoreDestructuring": true }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "@typescript-eslint/no-shadow": ["error", { "ignoreFunctionTypeParameterNameValueShadow": true }],
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react/prop-types": "off"
   }
 }
