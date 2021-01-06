@@ -17,7 +17,7 @@
     "lint": "eslint --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
