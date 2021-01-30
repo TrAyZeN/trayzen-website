@@ -15,19 +15,10 @@ module.exports = {
       'watch': 'watch \"$1\" src',
     }],
   ],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
-    /* ... */
-  },
   devOptions: {
     /* ... */
   },
   buildOptions: {
-    /* ... */
-  },
-  proxy: {
     /* ... */
   },
   alias: {
