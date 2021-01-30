@@ -10,8 +10,8 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "yarn snowpack dev",
+    "build": "yarn snowpack build",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "format": "eslint --fix --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "eslint --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\""
