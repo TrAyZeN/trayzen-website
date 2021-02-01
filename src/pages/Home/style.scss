@@ -1,20 +1,22 @@
 @import '../../assets/theme.scss';
 
 .home {
+  padding: 3rem 2rem;
   height: 100%;
+  box-sizing: border-box;
 
-  display: grid;
-  grid-template-columns: 2rem 1fr 2rem;
-  grid-template-rows: 3rem 4fr 2fr 0.5fr 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
   .profile {
-    grid-row: 2;
-    grid-column: 2;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-top: 10%;
 
     .container {
       display: flex;
@@ -35,11 +37,6 @@
       text-align: center;
       margin: 8px 0;
     }
-  }
-
-  .navbar {
-    grid-row: 4;
-    grid-column: 2;
   }
 }
 

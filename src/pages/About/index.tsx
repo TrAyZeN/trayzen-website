@@ -10,36 +10,38 @@ import LinkedinIcon from '../../assets/linkedin.svg';
 
 const About: React.VFC = () => (
   <div className="about">
-    <h1>About me</h1>
-    <div className="about-text">
-      <p>
-        Hi, I am a French computer science student. I am passionate about{' '}
-        <b>programming</b> and I am really <b>curious</b> I love to <b>learn</b>{' '}
-        new things.
-      </p>
-    </div>
+    <div className="content">
+      <h1>About me</h1>
+      <div className="about-text">
+        <p>
+          Hi, I am a French computer science student. I am passionate about{' '}
+          <b>programming</b> and I am really <b>curious</b> I love to{' '}
+          <b>learn</b> new things.
+        </p>
+      </div>
 
-    <div className="social">
-      <SocialButton
-        icon={EmailIcon}
-        link="mailto:lbenitoproduction@gmail.com"
-        alt="email"
-      />
-      <SocialButton
-        icon={GithubIcon}
-        link="https://github.com/trayzen"
-        alt="github"
-      />
-      <SocialButton
-        icon={GitlabIcon}
-        link="https://gitlab.com/TrAyZeN"
-        alt="gitlab"
-      />
-      <SocialButton
-        icon={LinkedinIcon}
-        link="https://www.linkedin.com/in/leo-benito"
-        alt="linkedin"
-      />
+      <div className="social">
+        <SocialButton
+          icon={EmailIcon}
+          link="mailto:lbenitoproduction@gmail.com"
+          alt="email"
+        />
+        <SocialButton
+          icon={GithubIcon}
+          link="https://github.com/trayzen"
+          alt="github"
+        />
+        <SocialButton
+          icon={GitlabIcon}
+          link="https://gitlab.com/TrAyZeN"
+          alt="gitlab"
+        />
+        <SocialButton
+          icon={LinkedinIcon}
+          link="https://www.linkedin.com/in/leo-benito"
+          alt="linkedin"
+        />
+      </div>
     </div>
 
     <NavBar items={[{ text: 'Home', to: '/' }, 'Projects']} />
