@@ -1,0 +1,19 @@
+.about {
+  padding: 3rem 2rem;
+  height: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    font-family: "Open Sans";
+    font-size: 11pt;
+  }
+}
