@@ -1,14 +1,14 @@
 @import '../../assets/theme.scss';
 
 .home {
+  padding: 3rem 2rem;
+  height: 100%;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  padding: 3rem 2rem;
-  height: 100%;
-  box-sizing: border-box;
 
   .profile {
     display: flex;
@@ -30,19 +30,6 @@
     p {
       text-align: center;
       margin: 8px 0;
-    }
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    a {
-      font-size: 15pt;
-      cursor: pointer;
     }
   }
 }

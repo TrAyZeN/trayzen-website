@@ -1,0 +1,19 @@
+@import '../../assets/theme.scss';
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  a {
+    cursor: pointer;
+    font-size: 15pt;
+    transition: .5s;
+  }
+
+  a:hover {
+    box-shadow: 0 3px 0 $white;
+  }
+}
