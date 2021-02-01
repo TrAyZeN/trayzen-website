@@ -11,10 +11,13 @@ import LinkedinIcon from '../../assets/linkedin.svg';
 const About: React.VFC = () => (
   <div className="about">
     <h1>About me</h1>
-    <p>
-      Hi, I am a French computer science student. I am passionate about
-      programming and I am really curious I love to learn new things.
-    </p>
+    <div className="about-text">
+      <p>
+        Hi, I am a French computer science student. I am passionate about{' '}
+        <b>programming</b> and I am really <b>curious</b> I love to <b>learn</b>{' '}
+        new things.
+      </p>
+    </div>
 
     <div className="social">
       <SocialButton

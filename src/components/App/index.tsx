@@ -11,7 +11,7 @@ const About = lazy(() => import('../../pages/About'));
 const App: React.VFC = () => (
   <div className="app">
     <BrowserRouter>
-      <Suspense fallback={Loader}>
+      <Suspense fallback={<Loader />}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
