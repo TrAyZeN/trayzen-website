@@ -16,6 +16,7 @@
 
   a:hover {
     box-shadow: 0 3px 0 $white;
+    animation: upDown 1.4s ease-in-out infinite;
   }
 }
 
@@ -27,5 +28,14 @@
     a {
       font-size: 18pt;
     }
+  }
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
   }
 }
