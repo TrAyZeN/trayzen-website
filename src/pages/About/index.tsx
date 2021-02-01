@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import NavBar from '../../components/NavBar';
 import SocialButton from '../../components/SocialButton';
 import './style.scss';
@@ -12,11 +12,8 @@ const About: React.VFC = () => (
   <div className="about">
     <h1>About me</h1>
     <p>
-      Hi I am TrayZeN, I am Interested in Mathematics, Engineering, Electronics,
-      6+ years of programming. Investigating old source code, hacking and
-      practicing competitive programming in my spare time. Also, producing clean
-      code, learning TDD, and other technologies or methods, I love to learn new
-      things.
+      Hi, I am a French computer science student. I am passionate about
+      programming and I am really curious I love to learn new things.
     </p>
 
     <div className="social">
@@ -46,4 +43,4 @@ const About: React.VFC = () => (
   </div>
 );
 
-export default About;
+export default memo(About);

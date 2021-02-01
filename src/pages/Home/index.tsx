@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './style.scss';
 
 import NavBar from '../../components/NavBar';
@@ -16,4 +16,4 @@ const Home: React.VFC = () => (
   </div>
 );
 
-export default Home;
+export default memo(Home);
