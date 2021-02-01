@@ -19,5 +19,9 @@ cd trayzen-website
 yarn install
 ```
 
+## Conventions
+### Tags
+Last commit of each version is tagged.
+
 ## License
 MIT TrAyZeN
