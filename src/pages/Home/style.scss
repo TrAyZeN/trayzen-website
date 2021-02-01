@@ -33,3 +33,21 @@
     }
   }
 }
+
+@media screen and (min-width: 550px) {
+  .home {
+    .profile {
+      margin-top: 6rem;
+
+      .profile-picture {
+        width: 100%;
+        padding: 0;
+      }
+
+      p {
+        margin: 1.2rem 0;
+        font-size: 13pt;
+      }
+    }
+  }
+}

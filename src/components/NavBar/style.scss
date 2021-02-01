@@ -8,6 +8,7 @@
   gap: 10px;
 
   a {
+    flex: 1;
     cursor: pointer;
     font-size: 15pt;
     transition: .5s;
@@ -15,5 +16,16 @@
 
   a:hover {
     box-shadow: 0 3px 0 $white;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .navbar {
+    flex-direction: row;
+    gap: 30px;
+
+    a {
+      font-size: 18pt;
+    }
   }
 }

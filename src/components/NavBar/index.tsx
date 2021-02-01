@@ -17,9 +17,9 @@ const isNavItem = (item: NavItem | string) =>
   (item as NavItem).text !== undefined;
 
 /*
- * Converts an item of type NavItem or string into an <a> element.
+ * Converts an item of type NavItem or string into a dom element.
  */
-const itemToAElement = (item: NavItem | string) => {
+const itemToElement = (item: NavItem | string) => {
   if (isNavItem(item)) {
     const i = item as NavItem;
     return (
@@ -38,7 +38,7 @@ const itemToAElement = (item: NavItem | string) => {
 };
 
 const NavBar: React.FC<Props> = ({ items }: Props) => (
-  <div className="navbar">{items.map(itemToAElement)}</div>
+  <div className="navbar">{items.map(itemToElement)}</div>
 );
 
 export default NavBar;
