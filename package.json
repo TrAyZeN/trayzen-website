@@ -13,7 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "format": "eslint --fix --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\"",
+    "fmt": "eslint --fix --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "eslint --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
