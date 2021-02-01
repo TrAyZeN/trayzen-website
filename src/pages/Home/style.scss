@@ -1,14 +1,22 @@
 @import '../../assets/theme.scss';
 
 .home {
-  .left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3rem 2rem;
+  height: 100%;
+  box-sizing: border-box;
+
+  .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     .profile-picture {
       width: 80%;
@@ -17,6 +25,24 @@
       padding: 1rem;
 
       border-radius: 50%;
+    }
+
+    p {
+      text-align: center;
+      margin: 8px 0;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    a {
+      font-size: 15pt;
+      cursor: pointer;
     }
   }
 }

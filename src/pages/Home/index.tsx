@@ -5,9 +5,11 @@ import ProfilePicture from '../../assets/profile.png';
 
 const Home: React.VFC = () => (
   <div className="home">
-    <div className="left-panel">
+    <div className="profile">
       <img className="profile-picture" src={ProfilePicture} alt="Profile" />
-      <h1>Hi I am TrAyZeN</h1>
+      <p>Hi I am TrAyZeN</p>
+    </div>
+    <div className="navbar">
       <a href="/projects">Projects</a>
       <a href="/about">About</a>
     </div>

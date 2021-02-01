@@ -1,4 +1,15 @@
 @import '../../assets/theme.scss';
 
 .app {
+  height: 100vh;
+  width: auto;
+
+  background-color: $primary;
+
+  color: $white;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
 }
