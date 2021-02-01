@@ -7,7 +7,9 @@ import ProfilePicture from '../../assets/profile.png';
 const Home: React.VFC = () => (
   <div className="home">
     <div className="profile">
-      <img className="profile-picture" src={ProfilePicture} alt="Profile" />
+      <div className="container">
+        <img className="profile-picture" src={ProfilePicture} alt="Profile" />
+      </div>
       <p>Hi I am TrAyZeN</p>
     </div>
     <NavBar items={['Projects', 'About']} />
