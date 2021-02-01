@@ -1,0 +1,47 @@
+@import '../../assets/theme.scss';
+
+.social-button {
+  $icon-width: 26px;
+
+  a {
+    width: $icon-width;
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+    background-color: $white;
+    border: 3px solid $primary;
+
+    img {
+      width: $icon-width;
+    }
+
+    transition: 0.5s ease-out;
+  }
+
+  a:hover {
+    background-color: $primary;
+    border: 3px solid $white;
+
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .social-button {
+    $icon-width: 36px;
+
+    a {
+      width: $icon-width;
+
+      img {
+        width: $icon-width;
+      }
+    }
+  }
+}

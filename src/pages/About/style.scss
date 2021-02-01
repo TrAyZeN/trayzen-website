@@ -16,4 +16,20 @@
     font-family: "Open Sans";
     font-size: 11pt;
   }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .about {
+    .social {
+      gap: 24px;
+    }
+  }
 }
