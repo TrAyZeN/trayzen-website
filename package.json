@@ -17,8 +17,10 @@
     "lint": "eslint --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.1.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "sass": "^1.32.5"
   },
   "devDependencies": {
