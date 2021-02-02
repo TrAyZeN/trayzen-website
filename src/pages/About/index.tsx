@@ -15,8 +15,8 @@ const About: React.VFC = () => (
       <div className="about-text">
         <p>
           Hi, I am a French computer science student. I am passionate about{' '}
-          <b>programming</b> and I am really <b>curious</b> I love to{' '}
-          <b>learn</b> new things.
+          <b>programming</b>, <b>curious</b> and love to <b>learn </b>
+          new things.
         </p>
       </div>
 
