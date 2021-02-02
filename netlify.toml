@@ -1,4 +1,7 @@
 [build]
+  publish = "build/"
+  command = "yarn install && yarn build"
+  environment = { NODE_ENV = "production" }
   [build.processing]
     skip_processing = false
   [build.processing.css]
