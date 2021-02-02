@@ -1,23 +1,43 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group';
 import './style.scss';
 
-import Loader from '../Loader';
+import Home from '../../pages/Home';
+import Projects from '../../pages/Projects';
+import About from '../../pages/About';
 
-const Home = lazy(() => import('../../pages/Home'));
-const Projects = lazy(() => import('../../pages/Projects'));
-const About = lazy(() => import('../../pages/About'));
+const routes = [
+  { path: '/', Component: Home },
+  { path: '/projects', Component: Projects },
+  { path: '/about', Component: About },
+];
 
 const App: React.VFC = () => (
   <div className="app">
     <BrowserRouter>
-      <Suspense fallback={<Loader />}>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/about" component={About} />
-        </Switch>
-      </Suspense>
+      <Switch>
+        <div className="page-container">
+          {routes.map(({ path, Component }) => (
+            <Route key={path} exact path={path}>
+              {({ match }) => (
+                <CSSTransition
+                  in={match != null}
+                  appear
+                  // Seems to be timeout before starting enter transition
+                  timeout={300}
+                  classNames="page"
+                  unmountOnExit
+                >
+                  <div className="page">
+                    <Component />
+                  </div>
+                </CSSTransition>
+              )}
+            </Route>
+          ))}
+        </div>
+      </Switch>
     </BrowserRouter>
   </div>
 );

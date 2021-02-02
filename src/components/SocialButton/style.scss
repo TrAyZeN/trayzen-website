@@ -13,7 +13,7 @@
 
     border-radius: 16px;
     background-color: $white;
-    border: 3px solid $primary;
+    border: 2px solid $primary;
 
     img {
       width: $icon-width;
@@ -24,7 +24,7 @@
 
   a:hover {
     background-color: $primary;
-    border: 3px solid $white;
+    border: 2px solid $white;
 
     img {
       filter: invert(1);

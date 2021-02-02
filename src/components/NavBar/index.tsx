@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './style.scss';
 
 type Props = {
@@ -23,17 +24,17 @@ const itemToElement = (item: NavItem | string) => {
   if (isNavItem(item)) {
     const i = item as NavItem;
     return (
-      <a href={i.to} key={i.text}>
+      <NavLink to={i.to} key={i.text} exact>
         {i.text}
-      </a>
+      </NavLink>
     );
   }
 
   const i = item as string;
   return (
-    <a href={`/${i.toLowerCase()}`} key={i}>
+    <NavLink to={`/${i.toLowerCase()}`} key={i} exact>
       {i}
-    </a>
+    </NavLink>
   );
 };
 
