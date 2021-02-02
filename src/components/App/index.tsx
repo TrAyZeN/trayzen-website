@@ -25,12 +25,16 @@ const App: React.VFC = () => (
                   in={match != null}
                   appear
                   // Seems to be timeout before starting enter transition
-                  timeout={1000}
+                  timeout={600}
                   classNames="page"
                   unmountOnExit
                 >
                   <div className="page">
-                    <Component />
+                    <div className="layer" />
+
+                    <div className="page-container">
+                      <Component />
+                    </div>
                   </div>
                 </CSSTransition>
               )}
