@@ -1,7 +1,4 @@
 [build]
-  base = "."
-  publish =  "./build/"
-  command = "yarn build"
   [build.processing]
     skip_processing = false
   [build.processing.css]
