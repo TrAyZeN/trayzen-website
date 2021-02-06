@@ -12,7 +12,7 @@ const Home: React.VFC = () => (
       </div>
       <p>Hi I am TrAyZeN</p>
     </div>
-    <NavBar items={['Projects', 'About']} />
+    <NavBar items={[{ text: 'Home', to: '/' }, 'Projects', 'About']} />
   </div>
 );
 

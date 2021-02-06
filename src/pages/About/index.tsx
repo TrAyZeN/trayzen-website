@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar';
 import SocialButton from '../../components/SocialButton';
 import './style.scss';
 
+import Resume from '../../assets/resume.pdf';
 import EmailIcon from '../../assets/email.svg';
 import GithubIcon from '../../assets/github.svg';
 import GitlabIcon from '../../assets/gitlab.svg';
@@ -16,7 +17,11 @@ const About: React.VFC = () => (
         <p>
           Hi, I am a French computer science student. I am passionate about{' '}
           <b>programming</b>, <b>curious</b> and love to <b>learn </b>
-          new things.
+          new things. If you are interested here is my{' '}
+          <a href={Resume} target="_blank" rel="noopener noreferrer">
+            resume
+          </a>
+          .
         </p>
       </div>
 
@@ -44,7 +49,7 @@ const About: React.VFC = () => (
       </div>
     </div>
 
-    <NavBar items={[{ text: 'Home', to: '/' }, 'Projects']} />
+    <NavBar items={[{ text: 'Home', to: '/' }, 'Projects', 'About']} />
   </div>
 );
 
