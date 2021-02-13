@@ -32,9 +32,7 @@ const App: React.VFC = () => (
                   <div className="page">
                     <div className="layer" />
 
-                    <div className="page-container">
-                      <Component />
-                    </div>
+                    <Component />
                   </div>
                 </CSSTransition>
               )}

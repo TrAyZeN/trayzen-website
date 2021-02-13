@@ -1,11 +1,6 @@
 @import '../../assets/theme.scss';
 
 .app {
-  height: 100vh;
-  width: auto;
-
-  background-color: $primary;
-
   color: $white;
 
   overflow: hidden;
@@ -17,22 +12,18 @@
   }
 
   .page-container {
-    width: 100vw;
-    height: 100vh;
     position: relative;
+    overflow: hidden;
+    min-height: 100vh;
   }
 
   .page {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
     .layer {
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 100%;
+      width: 100vw;
+      height: 100vh;
       left: 0;
+      top: -100vh;
       background: $white;
 
       z-index: 2;
@@ -44,7 +35,8 @@
   .page-appear {
     .layer {
       opacity: 1;
-      transform: translateY(-100%);
+      top: -100vh;
+      transform: translateY(100vh);
     }
 
     .page-container {
@@ -55,7 +47,7 @@
   .page-appear-active {
     .layer {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(200vh);
 
       transition: all 0.6s cubic-bezier(0.6, 0.05, 0.4, 1);
     }
@@ -69,18 +61,27 @@
   .page-appear-done {
     .layer {
       opacity: 0;
+      transform: translateY(0);
     }
   }
 
   .page-enter {
     opacity: 0;
     transform: scale(1.1);
+
+    position: absolute;
+    width: 100vw;
+    top: 0;
   }
 
   .page-enter-active {
     opacity: 1;
     transform: scale(1);
     transition: all 0.6s;
+  }
+
+  .page-enter-done {
+    position: relative;
   }
 
   .page-exit {
@@ -92,5 +93,6 @@
     opacity: 0;
     transform: scale(0.9);
     transition: all 0.3s;
+    display: none;
   }
 }

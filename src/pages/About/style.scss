@@ -1,7 +1,10 @@
+@import '../../assets/theme.scss';
+
 .about {
   padding: 3rem 2rem;
-  height: 100%;
   box-sizing: border-box;
+  height: 100vh;
+  background-color: $primary;
 
   display: flex;
   flex-direction: column;
