@@ -1,0 +1,85 @@
+@import '../../assets/theme.scss';
+
+.projects {
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  background-color: $primary;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    .project {
+      .image-container {
+        position: relative;
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            font-size: 20pt;
+            color: $primary;
+          }
+
+          transition: 0.3s;
+        }
+
+        img {
+          width: 80vw;
+          border-radius: 1px;
+          filter: blur(0px);
+
+          transition: 0.3s;
+        }
+      }
+
+      .image-container:hover {
+        .overlay {
+          opacity: 1;
+        }
+
+        img {
+          border-radius: 24px;
+          filter: blur(1px);
+        }
+      }
+
+      p {
+        font-family: "Open Sans";
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .projects {
+
+    .projects-container {
+      .project {
+        .image-container {
+          img {
+            width: 60vw;
+          }
+        }
+      }
+    }
+  }
+}
