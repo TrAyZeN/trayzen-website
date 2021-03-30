@@ -15,12 +15,52 @@ const About: React.VFC = () => (
       <h1>About me</h1>
       <div className="about-text">
         <p>
-          Hi, I am a French computer science student. I am passionate about{' '}
-          <b>programming</b>, <b>curious</b> and love to <b>learn </b>
-          new things. If you are interested here is my{' '}
+          Hi, I am a French computer science student.
+          <br /> I am passionate about{' '}
+          <b>
+            programming{' '}
+            <span role="img" aria-label="laptop">
+              💻
+            </span>
+          </b>
+          ,{' '}
+          <b>
+            sciences{' '}
+            <span role="img" aria-label="telescope">
+              🔭
+            </span>
+          </b>
+          .
+          <br /> I am{' '}
+          <b>
+            curious{' '}
+            <span role="img" aria-label="magnifying glass">
+              🔍
+            </span>
+          </b>
+          , I love to{' '}
+          <b>
+            learn{' '}
+            <span role="img" aria-label="books">
+              📚
+            </span>
+          </b>{' '}
+          new things but also to{' '}
+          <b>
+            create{' '}
+            <span role="img" aria-label="wrench">
+              🔧
+            </span>
+          </b>
+          .
+          <br />
+          If you are interested here is my{' '}
           <a href={Resume} target="_blank" rel="noopener noreferrer">
             resume
-          </a>
+          </a>{' '}
+          <span role="img" aria-label="page">
+            📄
+          </span>
           .
         </p>
       </div>
