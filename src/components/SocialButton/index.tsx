@@ -10,7 +10,7 @@ type Props = {
 const SocialButton: React.FC<Props> = ({ link, icon, alt }: Props) => (
   <div className="social-button">
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <img src={icon} className="icon" alt={alt} />
+      <img src={icon} className="icon" alt={alt} width="26" height="26" />
     </a>
   </div>
 );

@@ -17,6 +17,7 @@
 
     img {
       width: $icon-width;
+      height: auto;
     }
 
     transition: 0.5s ease-out;
@@ -41,6 +42,7 @@
 
       img {
         width: $icon-width;
+        height: auto;
       }
     }
   }
