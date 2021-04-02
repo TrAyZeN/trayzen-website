@@ -58,7 +58,7 @@ const About: React.VFC = () => (
           </b>
           .
           <br />
-          If you are interested here is my{' '}
+          If you are interested, here is my{' '}
           <a href={Resume} target="_blank" rel="noopener noreferrer">
             resume
           </a>{' '}
