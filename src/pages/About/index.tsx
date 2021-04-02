@@ -15,7 +15,11 @@ const About: React.VFC = () => (
       <h1>About me</h1>
       <div className="about-text">
         <p>
-          Hi, I am a French computer science student.
+          Hi{' '}
+          <span role="img" aria-label="waving hand">
+            👋
+          </span>
+          , I am a French computer science student.
           <br /> I am passionate about{' '}
           <b>
             programming{' '}
