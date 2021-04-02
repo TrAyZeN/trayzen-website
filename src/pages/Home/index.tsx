@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import './style.scss';
 
 import NavBar from '../../components/NavBar';
-import ProfilePicture from '../../assets/profile.png';
+import ProfilePicture from '../../assets/profile.webp';
 
 const Home: React.VFC = () => (
   <div className="home">

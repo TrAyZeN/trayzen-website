@@ -2,9 +2,9 @@ import React from 'react';
 import NavBar from '../../components/NavBar';
 import './style.scss';
 
-import Prism from '../../assets/prism.png';
-import Ora from '../../assets/ora.png';
-import EquipageSolidaire from '../../assets/equipage_solidaire.png';
+import Prism from '../../assets/prism.webp';
+import Ora from '../../assets/ora.webp';
+import EquipageSolidaire from '../../assets/equipage_solidaire.webp';
 import CLogo from '../../assets/c.svg';
 import CSharpLogo from '../../assets/csharp.svg';
 import NodeJsLogo from '../../assets/nodejs.svg';
