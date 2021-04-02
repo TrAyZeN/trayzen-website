@@ -48,6 +48,7 @@
 
             img {
               width: 60px;
+              height: auto;
             }
           }
 
@@ -56,6 +57,7 @@
 
         img {
           width: 80vw;
+          height: auto;
           border-radius: 1px;
           filter: blur(0px);
 
@@ -101,6 +103,7 @@
         .image-container {
           img {
             width: 60vw;
+            height: auto;
           }
         }
       }

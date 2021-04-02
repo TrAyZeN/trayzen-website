@@ -27,10 +27,10 @@ const Projects: React.VFC = () => (
           rel="noopener noreferrer"
         >
           <div className="image-container">
-            <img src={Prism} alt="Prism" />
+            <img src={Prism} alt="Prism" width="1243" height="749" />
             <div className="overlay">
               <div className="logo-container">
-                <img src={CLogo} alt="C language" />
+                <img src={CLogo} alt="C language" width="60" height="60" />
               </div>
               <p style={{ color: 'white' }}>Click to learn more ;)</p>
             </div>
@@ -49,10 +49,10 @@ const Projects: React.VFC = () => (
           rel="noopener noreferrer"
         >
           <div className="image-container">
-            <img src={Ora} alt="ORA" />
+            <img src={Ora} alt="ORA" width="802" height="632" />
             <div className="overlay">
               <div className="logo-container">
-                <img src={CSharpLogo} alt="C Sharp" />
+                <img src={CSharpLogo} alt="C Sharp" width="60" height="60" />
               </div>
               <p>Click to learn more ;)</p>
             </div>
@@ -68,15 +68,20 @@ const Projects: React.VFC = () => (
           rel="noopener noreferrer"
         >
           <div className="image-container">
-            <img src={EquipageSolidaire} alt="Equipage Solidaire" />
+            <img
+              src={EquipageSolidaire}
+              alt="Equipage Solidaire"
+              width="1899"
+              height="954"
+            />
             <div className="overlay">
               <div className="logo-container">
-                <img src={NodeJsLogo} alt="Node.JS" />
-                <img src={ReactLogo} alt="React.JS" />
-                <img src={SassLogo} alt="Sass" />
-                <img src={MongoDbLogo} alt="MongoDB" />
-                <img src={RedisLogo} alt="Redis" />
-                <img src={DockerLogo} alt="Docker" />
+                <img src={NodeJsLogo} alt="Node.JS" width="60" height="60" />
+                <img src={ReactLogo} alt="React.JS" width="60" height="60" />
+                <img src={SassLogo} alt="Sass" width="60" height="60" />
+                <img src={MongoDbLogo} alt="MongoDB" width="60" height="60" />
+                <img src={RedisLogo} alt="Redis" width="60" height="60" />
+                <img src={DockerLogo} alt="Docker" width="60" height="60" />
               </div>
               <p>Click to learn more ;)</p>
             </div>

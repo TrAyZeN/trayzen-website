@@ -8,7 +8,13 @@ const Home: React.VFC = () => (
   <div className="home">
     <div className="profile">
       <div className="container">
-        <img className="profile-picture" src={ProfilePicture} alt="Profile" />
+        <img
+          className="profile-picture"
+          src={ProfilePicture}
+          alt="Profile"
+          width="300"
+          height="300"
+        />
       </div>
       <p>Hi I am TrAyZeN</p>
     </div>
