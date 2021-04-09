@@ -16,10 +16,15 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    margin-top: 2rem;
 
     .project {
       .image-container {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         .overlay {
           position: absolute;
@@ -65,6 +70,10 @@
         }
       }
 
+      .description {
+        max-width: 600px;
+      }
+
       .image-container:hover {
         .overlay {
           opacity: 1;
@@ -102,6 +111,7 @@
       .project {
         .image-container {
           img {
+            max-width: 1000px;
             width: 60vw;
             height: auto;
           }
