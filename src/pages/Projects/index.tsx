@@ -113,7 +113,7 @@ const Projects: React.VFC = () => (
               height="598"
             />
             <div className="overlay">
-              <p>Click to learn more ;)</p>
+              <p style={{ color: 'white' }}>Click to learn more ;)</p>
             </div>
           </div>
         </a>
