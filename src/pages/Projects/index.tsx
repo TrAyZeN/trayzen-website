@@ -40,7 +40,7 @@ const Projects: React.VFC = () => (
             </div>
           </div>
         </a>
-        <p>
+        <p className="description">
           Prism is a software that allows you to convert an image of text into
           text data.
         </p>
@@ -73,7 +73,7 @@ const Projects: React.VFC = () => (
             </div>
           </div>
         </a>
-        <p>
+        <p className="description">
           A website for L&apos;Equipage Solidaire a french charity organization.
         </p>
       </div>
@@ -95,7 +95,10 @@ const Projects: React.VFC = () => (
             </div>
           </div>
         </a>
-        <p>ORA is software that allows you to share files using P2P.</p>
+        <p className="description">
+          ORA is Peer-to-Peer application for sharing files in groups. You can
+          manage your files using a CLI or GUI application.
+        </p>
       </div>
       <div className="project">
         <h2>Idependant game making</h2>
@@ -118,9 +121,10 @@ const Projects: React.VFC = () => (
           </div>
         </a>
         <p className="description">
-          I developped multiple video games on my own during my free time. I
-          developped them using various tools and game engines. Only few of them
-          are available online but you can still take a look.
+          I created some video games during my free time. I made them on my own
+          from graphics, to sound and logic. I developped them using various
+          tools and game engines such as Construct 2 and GameMaker. Only few of
+          them are available online but you can still take a look.
         </p>
       </div>
       <div className="attributions">
