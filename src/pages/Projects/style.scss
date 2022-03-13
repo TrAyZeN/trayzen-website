@@ -19,6 +19,14 @@
     margin-top: 2rem;
 
     .project {
+      h2 {
+        font-size: 15pt;
+      }
+
+      h3 {
+        font-size: 12pt;
+      }
+
       .image-container {
         position: relative;
         display: flex;
@@ -72,6 +80,7 @@
       }
 
       .description {
+        font-size: 11pt;
         width: 400px;
         text-align: justify;
       }
@@ -111,6 +120,14 @@
 
     .projects-container {
       .project {
+        h2 {
+          font-size: 18pt;
+        }
+
+        h3 {
+          font-size: 13pt;
+        }
+
         .image-container {
           img {
             width: 600px;
@@ -119,6 +136,7 @@
         }
 
         .description {
+          font-size: 12pt;
           width: 600px;
         }
       }
@@ -131,6 +149,14 @@
 
     .projects-container {
       .project {
+        h2 {
+          font-size: 20pt;
+        }
+
+        h3 {
+          font-size: 16pt;
+        }
+
         .image-container {
           img {
             width: 800px;
@@ -139,6 +165,7 @@
         }
 
         .description {
+          font-size: 15pt;
           width: 800px;
         }
       }
