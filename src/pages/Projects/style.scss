@@ -61,8 +61,9 @@
         }
 
         img {
-          width: 80vw;
-          height: auto;
+          width: 400px;
+          height: 200px;
+          object-fit: contain; // or 'cover' maybe
           border-radius: 1px;
           filter: blur(0px);
 
@@ -71,7 +72,8 @@
       }
 
       .description {
-        max-width: 600px;
+        width: 400px;
+        text-align: justify;
       }
 
       .image-container:hover {
@@ -104,17 +106,40 @@
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 630px) {
   .projects {
 
     .projects-container {
       .project {
         .image-container {
           img {
-            max-width: 1000px;
-            width: 60vw;
-            height: auto;
+            width: 600px;
+            height: 300px;
           }
+        }
+
+        .description {
+          width: 600px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .projects {
+
+    .projects-container {
+      .project {
+        .image-container {
+          img {
+            width: 800px;
+            height: 500px;
+          }
+        }
+
+        .description {
+          width: 800px;
         }
       }
     }
