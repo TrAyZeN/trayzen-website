@@ -70,7 +70,8 @@
 
         img {
           width: 400px;
-          height: 200px;
+          height: auto;
+          max-height: 500px;
           object-fit: contain; // or 'cover' maybe
           border-radius: 1px;
           filter: blur(0px);
@@ -130,14 +131,13 @@
 
         .image-container {
           img {
-            width: 600px;
-            height: 300px;
+            width: 550px;
           }
         }
 
         .description {
           font-size: 12pt;
-          width: 600px;
+          width: 550px;
         }
       }
     }
@@ -159,14 +159,13 @@
 
         .image-container {
           img {
-            width: 800px;
-            height: 500px;
+            width: 700px;
           }
         }
 
         .description {
-          font-size: 15pt;
-          width: 800px;
+          font-size: 14pt;
+          width: 700px;
         }
       }
     }
