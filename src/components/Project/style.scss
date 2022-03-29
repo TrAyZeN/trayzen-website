@@ -1,0 +1,137 @@
+@import '../../assets/theme.scss';
+
+.project {
+  h2 {
+    font-size: 15pt;
+  }
+
+  h3 {
+    font-size: 12pt;
+  }
+
+  .image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: 20pt;
+        color: $primary;
+      }
+
+      .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        img {
+          width: 60px;
+          height: auto;
+        }
+      }
+
+      transition: 0.3s;
+    }
+
+    img {
+      max-width: calc(100vw - 2rem);
+      height: auto;
+      max-height: 500px;
+      object-fit: contain; // or 'cover' maybe
+      border-radius: 1px;
+      filter: blur(0px);
+
+      transition: 0.3s;
+    }
+  }
+
+  .description {
+    font-size: 11pt;
+    text-align: justify;
+  }
+
+  .image-container:hover {
+    .overlay {
+      opacity: 1;
+
+      .logo-container {
+        img {
+          border-radius: 0;
+          filter: blur(0);
+        }
+      }
+    }
+
+    img {
+      border-radius: 24px;
+      filter: blur(2px);
+    }
+  }
+
+  p {
+    font-family: "Open Sans";
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .project {
+    h2 {
+      font-size: 18pt;
+    }
+
+    h3 {
+      font-size: 13pt;
+    }
+
+    .image-container {
+      img {
+        width: 550px;
+      }
+    }
+
+    .description {
+      font-size: 12pt;
+      width: 550px;
+    }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .project {
+    h2 {
+      font-size: 20pt;
+    }
+
+    h3 {
+      font-size: 16pt;
+    }
+
+    .image-container {
+      img {
+        width: 700px;
+      }
+    }
+
+    .description {
+      font-size: 14pt;
+      width: 700px;
+    }
+  }
+}
