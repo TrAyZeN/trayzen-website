@@ -73,7 +73,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
   ],
 ]);
 
-const Project = (props: Props) => {
+const Project = (props: Props): JSX.Element => {
   const { name, date, link, image, technologies, description } =
     props as Props & typeof defaultProps;
 
