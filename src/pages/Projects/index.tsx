@@ -3,7 +3,9 @@ import NavBar from '../../components/NavBar';
 import Project, { Technology } from '../../components/Project';
 import './style.scss';
 
+import K from '../../assets/k.png';
 import MyMips from '../../assets/my_mips.png';
+import _42Sh from '../../assets/42sh.png';
 import CrabRt from '../../assets/crab-rt.png';
 import Prism from '../../assets/prism.webp';
 import Ora from '../../assets/ora.webp';
@@ -19,7 +21,7 @@ const Projects: React.VFC = () => (
       <Project
         name="k"
         date="Feb. 2022 - Mar. 2022"
-        image={<img src={Prism} alt="Prism" width="1243" height="749" />}
+        image={<img src={K} alt="k" width="1243" height="749" />}
         technologies={[Technology.C]}
         description="k is a small x86 kernel. It features memory segmentation, syscalls,
           ELF loading, iso9660 filesystem. Multiple drivers are implemented such
@@ -39,7 +41,7 @@ const Projects: React.VFC = () => (
       <Project
         name="42sh"
         date="Nov. 2021 - Dec. 2021"
-        image={<img src={Prism} alt="Prism" width="1243" height="749" />}
+        image={<img src={_42Sh} alt="Prism" width="1243" height="749" />}
         technologies={[Technology.C]}
         description="42sh is a POSIX shell implementation."
       />
