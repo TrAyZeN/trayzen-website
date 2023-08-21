@@ -11,12 +11,13 @@
 
 ## Requirements
 - [Node](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
 
 ## Install
 ```
 git clone https://github.com/TrAyZeN/trayzen-website.git
 cd trayzen-website
-yarn install
+pnpm install
 ```
 
 ## Conventions
