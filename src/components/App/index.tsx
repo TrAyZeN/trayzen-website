@@ -1,47 +1,59 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
-import './style.scss';
+import React, { RefObject, createRef } from 'react';
+import { createBrowserRouter, useOutlet, useLocation } from 'react-router-dom';
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
+import './style.scss';
 import Home from '../../pages/Home';
 import Projects from '../../pages/Projects';
 import About from '../../pages/About';
 
 const routes = [
-  { path: '/', Component: Home },
-  { path: '/projects', Component: Projects },
-  { path: '/about', Component: About },
+  { path: '/', Component: Home, nodeRef: createRef() },
+  { path: '/projects', Component: Projects, nodeRef: createRef() },
+  { path: '/about', Component: About, nodeRef: createRef() },
 ];
 
-const App: React.VFC = () => (
-  <div className="app">
-    <BrowserRouter>
-      <Switch>
-        <div className="page-container">
-          {routes.map(({ path, Component }) => (
-            <Route key={path} exact path={path}>
-              {({ match }) => (
-                <CSSTransition
-                  in={match != null}
-                  appear
-                  // Seems to be timeout before starting enter transition
-                  timeout={500}
-                  classNames="page"
-                  unmountOnExit
-                >
-                  <div className="page">
-                    <div className="layer" />
+const App: React.VFC = () => {
+  const location = useLocation();
+  const currentOutlet = useOutlet();
+  const { nodeRef } =
+    routes.find((route) => route.path === location.pathname) ?? {};
 
-                    <Component />
-                  </div>
-                </CSSTransition>
-              )}
-            </Route>
-          ))}
-        </div>
-      </Switch>
-    </BrowserRouter>
-  </div>
-);
+  return (
+    <div className="app">
+      <SwitchTransition>
+        <CSSTransition
+          key={location.pathname}
+          nodeRef={nodeRef as RefObject<HTMLDivElement>}
+          in
+          appear
+          // Seems to be timeout before starting enter transition
+          timeout={500}
+          unmountOnExit
+          classNames="page"
+        >
+          {() => (
+            <div ref={nodeRef as RefObject<HTMLDivElement>} className="page">
+              <div className="layer" />
+              {currentOutlet}
+            </div>
+          )}
+        </CSSTransition>
+      </SwitchTransition>
+    </div>
+  );
+};
 
 export default App;
+
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: routes.map((route) => ({
+      index: route.path === '/',
+      path: route.path === '/' ? undefined : route.path,
+      element: <route.Component />,
+    })),
+  },
+]);

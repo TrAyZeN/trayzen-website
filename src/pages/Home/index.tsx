@@ -4,7 +4,7 @@ import './style.scss';
 import NavBar from '../../components/NavBar';
 import ProfilePicture from '../../assets/profile.webp';
 
-const Home: React.VFC = () => (
+const Home: React.FC = () => (
   <div className="home">
     <div className="profile">
       <div className="container">

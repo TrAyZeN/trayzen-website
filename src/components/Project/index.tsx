@@ -1,15 +1,5 @@
 import './style.scss';
 
-import RustLogo from '../../assets/rust.svg';
-import CLogo from '../../assets/c.svg';
-import CSharpLogo from '../../assets/csharp.svg';
-import NodeJsLogo from '../../assets/nodejs.svg';
-import ReactLogo from '../../assets/react.svg';
-import SassLogo from '../../assets/sass.svg';
-import MongoDbLogo from '../../assets/mongodb.svg';
-import RedisLogo from '../../assets/redis.svg';
-import DockerLogo from '../../assets/docker.svg';
-
 type Props = {
   name: string;
   date: string;
@@ -36,40 +26,89 @@ export enum Technology {
   Docker,
 }
 
-// TODO: Change string to enum
+// Directly importing SVG assets results in an error from svgr so putting them
+// in public directory as a workaround.
 const technologyLogos = new Map<Technology, JSX.Element>([
   [
     Technology.Rust,
-    <img src={RustLogo} alt="C language" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/rust.svg`}
+      alt="Rust language"
+      width="60"
+      height="60"
+    />,
   ],
   [
     Technology.C,
-    <img src={CLogo} alt="Rust language" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/c.svg`}
+      alt="C language"
+      width="60"
+      height="60"
+    />,
   ],
   [
     Technology.CSharp,
-    <img src={CSharpLogo} alt="C# language" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/csharp.svg`}
+      alt="C# language"
+      width="60"
+      height="60"
+    />,
   ],
   [
     Technology.NodeJs,
-    <img src={NodeJsLogo} alt="Node.JS" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/nodejs.svg`}
+      alt="Node.JS"
+      width="60"
+      height="60"
+    />,
   ],
   [
     Technology.React,
-    <img src={ReactLogo} alt="React.JS" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/react.svg`}
+      alt="React.JS"
+      width="60"
+      height="60"
+    />,
   ],
-  [Technology.Sass, <img src={SassLogo} alt="Sass" width="60" height="60" />],
+  [
+    Technology.Sass,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/sass.svg`}
+      alt="Sass"
+      width="60"
+      height="60"
+    />,
+  ],
   [
     Technology.MongoDb,
-    <img src={MongoDbLogo} alt="MongoDB" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/mongodb.svg`}
+      alt="MongoDB"
+      width="60"
+      height="60"
+    />,
   ],
   [
     Technology.Redis,
-    <img src={RedisLogo} alt="Redis" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/redis.svg`}
+      alt="Redis"
+      width="60"
+      height="60"
+    />,
   ],
   [
     Technology.Docker,
-    <img src={DockerLogo} alt="Docker" width="60" height="60" />,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/docker.svg`}
+      alt="Docker"
+      width="60"
+      height="60"
+    />,
   ],
 ]);
 
@@ -86,9 +125,9 @@ const Project = (props: Props): JSX.Element => {
           {image}
           <div className="overlay">
             <div className="logo-container">
-              {technologies.map((technology) =>
-                technologyLogos.get(technology),
-              )}
+              {technologies.map((technology) => (
+                <div key={technology}>{technologyLogos.get(technology)}</div>
+              ))}
             </div>
             <p style={{ color: 'white' }}>Click to learn more ;)</p>
           </div>

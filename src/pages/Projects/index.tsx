@@ -95,7 +95,7 @@ const Projects: React.VFC = () => (
         date="Jan. 2020 - May 2020"
         link="https://github.com/crab-wave/ora"
         image={<img src={Ora} alt="ORA" width="802" height="632" />}
-        technologies={[Technology.C]}
+        technologies={[Technology.CSharp]}
         description="ORA is Peer-to-Peer application for sharing files in groups. You can
           manage your files using a CLI or GUI application."
       />

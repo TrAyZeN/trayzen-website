@@ -24,7 +24,7 @@ const itemToElement = (item: NavItem | string) => {
   if (isNavItem(item)) {
     const i = item as NavItem;
     return (
-      <NavLink to={i.to} key={i.text} exact>
+      <NavLink to={i.to} key={i.text} end>
         {i.text}
       </NavLink>
     );
@@ -32,7 +32,7 @@ const itemToElement = (item: NavItem | string) => {
 
   const i = item as string;
   return (
-    <NavLink to={`/${i.toLowerCase()}`} key={i} exact>
+    <NavLink to={`/${i.toLowerCase()}`} key={i} end>
       {i}
     </NavLink>
   );

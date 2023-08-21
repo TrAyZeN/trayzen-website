@@ -4,12 +4,8 @@ import SocialButton from '../../components/SocialButton';
 import './style.scss';
 
 import Resume from '../../assets/resume.pdf';
-import EmailIcon from '../../assets/email.svg';
-import GithubIcon from '../../assets/github.svg';
-import GitlabIcon from '../../assets/gitlab.svg';
-import LinkedinIcon from '../../assets/linkedin.svg';
 
-const About: React.VFC = () => (
+const About: React.FC = () => (
   <div className="about">
     <div className="content">
       <h1>About me</h1>
@@ -71,22 +67,22 @@ const About: React.VFC = () => (
 
       <div className="social">
         <SocialButton
-          icon={EmailIcon}
+          icon={`${process.env.PUBLIC_URL}/svg/email.svg`}
           link="mailto:lbenitoproduction@gmail.com"
           alt="email"
         />
         <SocialButton
-          icon={GithubIcon}
+          icon={`${process.env.PUBLIC_URL}/svg/github.svg`}
           link="https://github.com/trayzen"
           alt="github"
         />
         <SocialButton
-          icon={GitlabIcon}
+          icon={`${process.env.PUBLIC_URL}/svg/gitlab.svg`}
           link="https://gitlab.com/TrAyZeN"
           alt="gitlab"
         />
         <SocialButton
-          icon={LinkedinIcon}
+          icon={`${process.env.PUBLIC_URL}/svg/linkedin.svg`}
           link="https://www.linkedin.com/in/leo-benito"
           alt="linkedin"
         />
