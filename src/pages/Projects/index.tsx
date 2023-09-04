@@ -12,7 +12,7 @@ import Ora from '../../assets/ora.webp';
 import EquipageSolidaire from '../../assets/equipage_solidaire.webp';
 import GottaGoCatch from '../../assets/gottagocatch.webp';
 
-const Projects: React.VFC = () => (
+const Projects: React.FC = () => (
   <div className="projects">
     <h1>Projects</h1>
     <NavBar items={[{ text: 'Home', to: '/' }, 'Projects', 'About']} />
@@ -23,27 +23,27 @@ const Projects: React.VFC = () => (
         date="Feb. 2022 - Mar. 2022"
         image={<img src={K} alt="k" width="1243" height="749" />}
         technologies={[Technology.C]}
-        description="k is a small x86 kernel. It features memory segmentation, syscalls,
-          ELF loading, iso9660 filesystem. Multiple drivers are implemented such
-          as: 8250 UART driver, 8259A PIC driver, 8042 keyboard driver, 8254 PIT
-          driver, ATAPI driver."
+        description="k is a small x86 kernel. It features memory segmentation,
+        syscalls, ELF loading, iso9660 filesystem. Multiple drivers are
+        implemented for devices such as: 8250 UART, dual 8259A PIC, 8042
+        keyboard, 8254 PIT, ATAPI."
       />
       <Project
         name="my_mips"
         date="Dec. 2021 - Jan. 2022"
         image={<img src={MyMips} alt="my_mips" width="1243" height="749" />}
         technologies={[Technology.C]}
-        description="
-          my_mips is a MIPS-I emulator. My implementation supports ELF loading
-          and implements JIT compilation of MIPS instructions into x86
-          instructions."
+        description="my_mips is a MIPS-I emulator. The implementation supports
+        ELF loading and implements JIT compilation of MIPS instructions into x86
+        instructions."
       />
       <Project
         name="42sh"
         date="Nov. 2021 - Dec. 2021"
         image={<img src={_42Sh} alt="Prism" width="1243" height="749" />}
         technologies={[Technology.C]}
-        description="42sh is a POSIX shell implementation."
+        description="42sh is a POSIX shell implementation. A shell is a command
+        language interpreter."
       />
       <Project
         name="crab-rt"
@@ -51,10 +51,10 @@ const Projects: React.VFC = () => (
         link="https://github.com/trayzen/crab-rt"
         image={<img src={CrabRt} alt="crab-rt" width="1243" height="749" />}
         technologies={[Technology.Rust]}
-        description="crab-rt is small Path Tracer running on CPU. It implements sphere
-          shapes, lambertian material, specular reflection material, lights and
-          more. It is multithreaded and implements Bounded Volume Hierarchy
-          (BVH) as an acceleration structure."
+        description="crab-rt is small Path Tracer running on the CPU. It
+        implements multiple shapes, multiple materials, lights and many more. It
+        is multithreaded and implements Bounded Volume Hierarchy (BVH) as an
+        acceleration structure."
       />
       <Project
         name="Prism"
@@ -62,14 +62,18 @@ const Projects: React.VFC = () => (
         link="https://github.com/prismocr/ocr"
         image={<img src={Prism} alt="Prism" width="1243" height="749" />}
         technologies={[Technology.C]}
-        description="Prism is an OCR. It is a software that allows you to convert an image
-          of text into text data. Prism features a CLI and GUI application. A
-          neural network is used under the hood to recognize characters."
+        description="Prism is an OCR. It is a software that allows you to
+        convert an image of text into text data. Prism starts with a
+        pre-processing pass that normalizes the image. The pre-processed image
+        is then segmented into character images. These character images are fed
+        into a neural network to recognize them.  To finish a post-processing
+        pass is applied to the resulting text.  Prism features a CLI and GUI
+        application."
       />
       <Project
         name="L'Equipage solidaire"
         date="Sep. 2020 - Nov. 2020"
-        link="https://equipagesolidaire.org"
+        link="https://equipagesolidaire.netlify.app"
         image={
           <img
             src={EquipageSolidaire}
@@ -86,9 +90,8 @@ const Projects: React.VFC = () => (
           Technology.Redis,
           Technology.Docker,
         ]}
-        description="A website for L'Equipage Solidaire a french charity organization.
-          Note that the backend is not hosted anymore and the domain name has
-          not been renewed."
+        description="A website for L'Equipage Solidaire a french charity
+        organization. Note that the backend is not hosted anymore."
       />
       <Project
         name="ORA"
@@ -96,8 +99,8 @@ const Projects: React.VFC = () => (
         link="https://github.com/crab-wave/ora"
         image={<img src={Ora} alt="ORA" width="802" height="632" />}
         technologies={[Technology.CSharp]}
-        description="ORA is Peer-to-Peer application for sharing files in groups. You can
-          manage your files using a CLI or GUI application."
+        description="ORA is Peer-to-Peer file sharing application. It features a
+        CLI and GUI interface."
       />
       <Project
         name="Independant game making"
@@ -111,10 +114,10 @@ const Projects: React.VFC = () => (
             height="598"
           />
         }
-        description="I created some video games during my free time. I made them on my own
-          from graphics, to sound and logic. I developped them using various
-          tools and game engines such as Construct 2 and GameMaker. Only few of
-          them are available online but you can still take a look."
+        description="I made some video games during my free time. I created them
+        on my own from graphics, to sound and code. I developped them using
+        various tools and game engines such as Construct 2 and GameMaker. Only
+        few are available online but you can still take a look."
       />
       <div className="attributions">
         Icons by{' '}
