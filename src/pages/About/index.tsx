@@ -15,17 +15,7 @@ const About: React.FC = () => (
           <br />I am passionate about <b>programming</b>, <b>sciences</b>
           .
           <br />I am <b>curious</b>, I love to <b>learn</b> new things but also
-          to <b>create</b>
-          .
-          <br />
-          If you are interested, here is my{' '}
-          <a href={Resume} target="_blank" rel="noopener noreferrer">
-            resume
-          </a>{' '}
-          <span role="img" aria-label="page">
-            📄
-          </span>
-          .
+          to <b>create</b>.
         </p>
       </div>
 
@@ -51,6 +41,21 @@ const About: React.FC = () => (
           alt="linkedin"
         />
       </div>
+
+      <a
+        className="resume"
+        href={Resume}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+        <img
+          src={`${process.env.PUBLIC_URL}/svg/download.svg`}
+          alt="Download"
+          width="40"
+          height="40"
+        />
+      </a>
     </div>
 
     <NavBar items={[{ text: 'Home', to: '/' }, 'Projects', 'About']} />
