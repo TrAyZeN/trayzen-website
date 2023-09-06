@@ -3,9 +3,11 @@ import NavBar from '../../components/NavBar';
 import Project, { Technology } from '../../components/Project';
 import './style.scss';
 
+import SuperSda from '../../assets/super_sda.png';
 import K from '../../assets/k.png';
 import MyMips from '../../assets/my_mips.png';
 import _42Sh from '../../assets/42sh.png';
+import Homelab from '../../assets/homelab.png';
 import CrabRt from '../../assets/crab-rt.png';
 import Prism from '../../assets/prism.webp';
 import Ora from '../../assets/ora.webp';
@@ -18,6 +20,14 @@ const Projects: React.FC = () => (
     <NavBar items={[{ text: 'Home', to: '/' }, 'Projects', 'About']} />
 
     <div className="projects-container">
+      <Project
+        name="super_sda"
+        date="Apr. 2023 - May. 2023"
+        image={<img src={SuperSda} alt="super_sda" width="1243" height="749" />}
+        technologies={[Technology.C, Technology.Kicad]}
+        description="super_sda is a homemade Simon game. We designed the electronic
+        schematics, PCB and developped the firmware."
+      />
       <Project
         name="k"
         date="Feb. 2022 - Mar. 2022"
@@ -40,10 +50,21 @@ const Projects: React.FC = () => (
       <Project
         name="42sh"
         date="Nov. 2021 - Dec. 2021"
-        image={<img src={_42Sh} alt="Prism" width="1243" height="749" />}
+        image={<img src={_42Sh} alt="42sh" width="1243" height="749" />}
         technologies={[Technology.C]}
         description="42sh is a POSIX shell implementation. A shell is a command
         language interpreter."
+      />
+      <Project
+        name="Homelab"
+        date="Jul. 2021 - Now"
+        image={<img src={Homelab} alt="Homelab" width="1243" height="749" />}
+        technologies={[
+          Technology.Docker,
+          Technology.Ansible,
+          Technology.Vagrant,
+        ]}
+        description="Maintenance and development of multiple services hosted at home."
       />
       <Project
         name="crab-rt"

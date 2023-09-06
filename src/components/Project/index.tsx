@@ -1,5 +1,7 @@
 import './style.scss';
 
+import KicadLogo from '../../assets/kicad.png';
+
 type Props = {
   name: string;
   date: string;
@@ -24,6 +26,9 @@ export enum Technology {
   MongoDb,
   Redis,
   Docker,
+  Ansible,
+  Vagrant,
+  Kicad,
 }
 
 // Directly importing SVG assets results in an error from svgr so putting them
@@ -109,6 +114,28 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       width="60"
       height="60"
     />,
+  ],
+  [
+    Technology.Ansible,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/ansible.svg`}
+      alt="Ansible"
+      width="60"
+      height="60"
+    />,
+  ],
+  [
+    Technology.Vagrant,
+    <img
+      src={`${process.env.PUBLIC_URL}/svg/vagrant.svg`}
+      alt="Vagrant"
+      width="60"
+      height="60"
+    />,
+  ],
+  [
+    Technology.Kicad,
+    <img src={KicadLogo} alt="Kicad" width="60" height="60" />,
   ],
 ]);
 
