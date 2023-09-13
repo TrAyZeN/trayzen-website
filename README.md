@@ -14,10 +14,21 @@
 - [pnpm](https://pnpm.io/)
 
 ## Install
-```
+```sh
 git clone https://github.com/TrAyZeN/trayzen-website.git
 cd trayzen-website
 pnpm install
+```
+
+## Build
+```sh
+pnpm run build
+```
+
+## Development
+To start a development server:
+```sh
+pnpm run start
 ```
 
 ## Conventions

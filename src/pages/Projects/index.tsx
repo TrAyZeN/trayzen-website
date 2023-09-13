@@ -24,9 +24,11 @@ const Projects: React.FC = () => (
         name="super_sda"
         date="Apr. 2023 - May. 2023"
         image={<img src={SuperSda} alt="super_sda" width="1243" height="749" />}
-        technologies={[Technology.C, Technology.Kicad]}
-        description="super_sda is a homemade Simon game. We designed the electronic
-        schematics, PCB and developped the firmware."
+        technologies={[Technology.Kicad, Technology.C]}
+        description="super_sda is a homemade Simon game. It displays a sequence
+        of colors along with sound that you have to reproduce. At each turn the
+        sequence becomes longer. We designed the electronic schematics, PCB and
+        developped the firmware."
       />
       <Project
         name="k"
@@ -64,7 +66,9 @@ const Projects: React.FC = () => (
           Technology.Ansible,
           Technology.Vagrant,
         ]}
-        description="Maintenance and development of multiple services hosted at home."
+        description="Maintenance and development of multiple services on my own
+        server. The server is provisioned using ansible. Services run on
+        docker."
       />
       <Project
         name="crab-rt"
@@ -120,8 +124,9 @@ const Projects: React.FC = () => (
         link="https://github.com/crab-wave/ora"
         image={<img src={Ora} alt="ORA" width="802" height="632" />}
         technologies={[Technology.CSharp]}
-        description="ORA is Peer-to-Peer file sharing application. It features a
-        CLI and GUI interface."
+        description="ORA is Peer-to-Peer file sharing application. The storage
+        is fully decentralized on each peer's device. It can be used through a
+        CLI or GUI interface."
       />
       <Project
         name="Independant game making"
