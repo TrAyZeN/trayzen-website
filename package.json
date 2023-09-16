@@ -14,7 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "fmt": "eslint --fix --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "eslint --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "eslint --config .eslintrc.json \"src/**/*.{js,jsx,ts,tsx}\"",
+    "clear": "rm -r node_modules build"
   },
   "dependencies": {
     "@types/node": "^20.6.0",

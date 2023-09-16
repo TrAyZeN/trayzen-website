@@ -41,6 +41,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="Rust language"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -50,6 +51,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="C language"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -59,6 +61,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="C# language"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -68,6 +71,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="Node.JS"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -77,6 +81,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="React.JS"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -86,6 +91,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="Sass"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -95,6 +101,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="MongoDB"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -104,6 +111,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="Redis"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -113,6 +121,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="Docker"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -122,6 +131,7 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="Ansible"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
@@ -131,11 +141,12 @@ const technologyLogos = new Map<Technology, JSX.Element>([
       alt="Vagrant"
       width="60"
       height="60"
+      loading="lazy"
     />,
   ],
   [
     Technology.Kicad,
-    <img src={KicadLogo} alt="Kicad" width="60" height="60" />,
+    <img src={KicadLogo} alt="Kicad" width="60" height="60" loading="lazy" />,
   ],
 ]);
 

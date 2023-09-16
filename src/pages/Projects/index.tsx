@@ -14,6 +14,8 @@ import Ora from '../../assets/ora.webp';
 import EquipageSolidaire from '../../assets/equipage_solidaire.webp';
 import GottaGoCatch from '../../assets/gottagocatch.webp';
 
+// WARN: Lazy loading is not fully supported on firefox
+// See: https://caniuse.com/?search=lazyloading
 const Projects: React.FC = () => (
   <div className="projects">
     <h1>Projects</h1>
@@ -23,7 +25,15 @@ const Projects: React.FC = () => (
       <Project
         name="super_sda"
         date="Apr. 2023 - May. 2023"
-        image={<img src={SuperSda} alt="super_sda" width="1243" height="749" />}
+        image={
+          <img
+            src={SuperSda}
+            alt="super_sda"
+            width="1243"
+            height="749"
+            loading="lazy"
+          />
+        }
         technologies={[Technology.Kicad, Technology.C]}
         description="super_sda is a homemade Simon game. It displays a sequence
         of colors along with sound that you have to reproduce. At each turn the
@@ -33,7 +43,7 @@ const Projects: React.FC = () => (
       <Project
         name="k"
         date="Feb. 2022 - Mar. 2022"
-        image={<img src={K} alt="k" width="1243" height="749" />}
+        image={<img src={K} alt="k" width="1243" height="749" loading="lazy" />}
         technologies={[Technology.C]}
         description="k is a small x86 kernel. It features memory segmentation,
         syscalls, ELF loading, iso9660 filesystem. Multiple drivers are
@@ -43,7 +53,15 @@ const Projects: React.FC = () => (
       <Project
         name="my_mips"
         date="Dec. 2021 - Jan. 2022"
-        image={<img src={MyMips} alt="my_mips" width="1243" height="749" />}
+        image={
+          <img
+            src={MyMips}
+            alt="my_mips"
+            width="1243"
+            height="749"
+            loading="lazy"
+          />
+        }
         technologies={[Technology.C]}
         description="my_mips is a MIPS-I emulator. The implementation supports
         ELF loading and implements JIT compilation of MIPS instructions into x86
@@ -52,7 +70,15 @@ const Projects: React.FC = () => (
       <Project
         name="42sh"
         date="Nov. 2021 - Dec. 2021"
-        image={<img src={_42Sh} alt="42sh" width="1243" height="749" />}
+        image={
+          <img
+            src={_42Sh}
+            alt="42sh"
+            width="1243"
+            height="749"
+            loading="lazy"
+          />
+        }
         technologies={[Technology.C]}
         description="42sh is a POSIX shell implementation. A shell is a command
         language interpreter."
@@ -60,7 +86,15 @@ const Projects: React.FC = () => (
       <Project
         name="Homelab"
         date="Jul. 2021 - Now"
-        image={<img src={Homelab} alt="Homelab" width="1243" height="749" />}
+        image={
+          <img
+            src={Homelab}
+            alt="Homelab"
+            width="1243"
+            height="749"
+            loading="lazy"
+          />
+        }
         technologies={[
           Technology.Docker,
           Technology.Ansible,
@@ -74,7 +108,15 @@ const Projects: React.FC = () => (
         name="crab-rt"
         date="Dec. 2020 - Now"
         link="https://github.com/trayzen/crab-rt"
-        image={<img src={CrabRt} alt="crab-rt" width="1243" height="749" />}
+        image={
+          <img
+            src={CrabRt}
+            alt="crab-rt"
+            width="1243"
+            height="749"
+            loading="lazy"
+          />
+        }
         technologies={[Technology.Rust]}
         description="crab-rt is small Path Tracer running on the CPU. It
         implements multiple shapes, multiple materials, lights and many more. It
@@ -85,7 +127,15 @@ const Projects: React.FC = () => (
         name="Prism"
         date="Sep. 2020 - Dec. 2020"
         link="https://github.com/prismocr/ocr"
-        image={<img src={Prism} alt="Prism" width="1243" height="749" />}
+        image={
+          <img
+            src={Prism}
+            alt="Prism"
+            width="1243"
+            height="749"
+            loading="lazy"
+          />
+        }
         technologies={[Technology.C]}
         description="Prism is an OCR. It is a software that allows you to
         convert an image of text into text data. Prism starts with a
@@ -105,6 +155,7 @@ const Projects: React.FC = () => (
             alt="Equipage Solidaire"
             width="1899"
             height="954"
+            loading="lazy"
           />
         }
         technologies={[
@@ -122,7 +173,9 @@ const Projects: React.FC = () => (
         name="ORA"
         date="Jan. 2020 - May 2020"
         link="https://github.com/crab-wave/ora"
-        image={<img src={Ora} alt="ORA" width="802" height="632" />}
+        image={
+          <img src={Ora} alt="ORA" width="802" height="632" loading="lazy" />
+        }
         technologies={[Technology.CSharp]}
         description="ORA is Peer-to-Peer file sharing application. The storage
         is fully decentralized on each peer's device. It can be used through a
@@ -138,6 +191,7 @@ const Projects: React.FC = () => (
             alt="Gotta go catch"
             width="798"
             height="598"
+            loading="lazy"
           />
         }
         description="I made some video games during my free time. I created them
